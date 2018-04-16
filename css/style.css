@@ -7,11 +7,10 @@ html{
     padding: 0;
 }
 body{
-    font-family: 'Raleway';
-    font-weight: 300;
-    font-style: italic;
-    font-size: 1.5rem;
-    line-height: 2;
+    font-family: "Raleway",sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -28,7 +27,7 @@ h1{
 h2{
     font-weight: 300;
     font-style: italic;
-    margin-bottom: 40px;
+    margin-bottom: 1.5rem;
 }
 
 p{
@@ -120,8 +119,12 @@ Banner
     position: relative;
 }
 
+.banner-text{
+}
+
 .collection{
-    font-size: 20px;
+    font: inherit;
+    font-size: 1.25rem;
     text-transform: uppercase;
     color: white;
     text-align: center;
@@ -130,8 +133,8 @@ Banner
 }
 
 .season{
-    font-family: "Playfairdisplay-regular",serif;
-    font-size: 45px;
+    font-family: "Playfair Display",serif;
+    font-size: 2.5rem;
     color: white;
     text-align: center;
     position: relative;
@@ -142,7 +145,19 @@ Banner
 About
 */
 .about{
-    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.about-text h2{
+}
+
+.about-text p{
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: 1.15rem;
+    line-height: 2;
 }
 
 /* ================================================================================= 
