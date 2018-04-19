@@ -6,9 +6,17 @@
         <meta name="description" content="Aloha Apparel Co.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Aloha Apparel Co.</title>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-       <link href="css/reset-fonts.css" type="text/css" rel="stylesheet">
+        <!-- flickity link -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+         <!-- CSS Stylesheet link -->
+        <link href="css/reset-fonts.css" type="text/css" rel="stylesheet">
         <link href="css/style.css" type="text/css" rel="stylesheet">
+        <!-- jQuery link -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./js/script.js"></script>
+        <!-- flickity stylesheet -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     </head>
     
     <body>
@@ -29,7 +37,6 @@
                 <div class="cart">
                     <img src="images/cart-icon.svg" alt="shopping-cart">
                 </div>
-
         </header>
         
         <section class="banner">
@@ -67,17 +74,17 @@
                     <h2>Most-Loved <span class="heavy">Products</span></h2>
                 </div>
 
-                <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
-
+                <div class="main-carousel">
+                    <div class="carousel-cell"><img src="./images/stretch-knit-dress.jpg"></div>
+                    <div class="carousel-cell"><img src="./images/cotton-blue-shirt.jpg"></div>
+                    <div class="carousel-cell"><img src="./images/checked-stretch-dress.jpg"></div>
+                    <div class="carousel-cell"><img src="./images/blue-hipster-backpack.jpg"></div>
+                    <div class="carousel-cell"><img src="./images/demin-overall-shorts.jpg"></div>
+                    <div class="carousel-cell"><img src="./images/pink-dotted-dress.jpg"></div>
+                    <div class="carousel-cell"><img src="./images/blue-silk-dress.jpg"></div>
+                    <div class="carousel-cell"><img src="./images/cotton-yellow-tshirt.jpg"></div>
+                    ........
+                  </div>
         </section>
 
         <section class="subscribe">
@@ -86,7 +93,7 @@
                     <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. 
                         Unsubscribe at any time.</p>
                     <form class="sign-up">
-                        <input class="email" type="email" name="you're email" placeholder="Your Email">
+                        <input class="email" type="email" name="your email" placeholder="Your Email">
                         <input class="button" type="submit" value="SUBSCRIBE">
                     </form>
                 </div>
@@ -115,7 +122,6 @@
                 </ul>
             </div>
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="./js/script.js"></script>
+
     </body>
 </html>
