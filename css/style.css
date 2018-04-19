@@ -31,6 +31,10 @@ h2{
     margin-bottom: 1.5rem;
 }
 
+h3 {
+    color: #e2574c;
+}
+
 p{
     font-family: "Raleway";
     text-align: center;
@@ -255,21 +259,29 @@ Product Line
 */
 .most-loved{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
     line-height: 1;
 }
 .carousel {
     background: #EEE;
-    /* margin: 0; */
-    /* padding: 0; */
+    padding-bottom: 0;
   }
   
   .carousel-cell {
     width: 100%;
-    height: 50rem;
+    height: 37rem;
     margin-right: 10px;
     border-radius: 5px;
     counter-increment: gallery-cell;
+  }
+
+  .carousel-cell img{
+      margin-top: 0;
+      margin-bottom: 1rem;
+  }
+
+  .carousel-cell h3{
+      margin-bottom: 1rem;
   }
 
   /* cell number */
@@ -278,10 +290,26 @@ Product Line
     text-align: center;
     content: counter(gallery-cell);
     line-height: 0;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
+    margin-bottom: 0;
     font-size: 80px;
     color: white;
   }
+
+.product-type{
+    font-size: .75rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.product-type, .price{
+    color: #969696;
+    font-weight: 700;
+}
+
+.price{
+    margin-bottom: 0;
+}
 
 /* =================================================================================
 Subscribe
@@ -290,6 +318,7 @@ Subscribe
     text-align: center;
     color: #FFFFFF;
     height: 350px;
+    margin-top: 5rem;
     padding-top: 50px;
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0 ,rgba(0,0,0,.25)), url(../images/wave-bkgd.jpg) no-repeat bottom;
 }

@@ -6,7 +6,7 @@ $(document).ready(function() { //<--- document ready lets page load before apply
 
 $('.main-carousel').flickity({
     // options
-    cellAlign: 'left',
+    cellAlign: 'center',
     contain: true
   });
 
