@@ -6,8 +6,9 @@ html{
     margin: 0;
     padding: 0;
 }
+
 body{
-    font-family: "Raleway",sans-serif;
+    font-family: 'Raleway',sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -36,7 +37,7 @@ h3 {
 }
 
 p{
-    font-family: "Raleway";
+    font-family: 'Raleway';
     text-align: center;
 }
 
@@ -57,7 +58,8 @@ Header
 .header-container{
     display:flex;
     flex-wrap: wrap;
-
+    justify-content: space-between;
+    margin: 1rem;
 }
 
 .logo{
@@ -97,7 +99,7 @@ Header
 }
 
 .nav a:hover{
-    color: black;
+    color: #b64036;
 }
 
 .cart{
@@ -129,6 +131,7 @@ Banner
     justify-content: center;
     align-items: center;
     padding-top: 11rem;
+    width: 80%;
 }
 
 .banner-text p{
@@ -143,10 +146,11 @@ Banner
 }
 
 .season{
-    font-family: "Playfair Display",serif;
+    font-family: 'Playfair Display',serif;
     font-size: 2.5rem;
+    font-weight: 400;
     color: white;
-
+    line-height: 1;
 }
 
 /* =================================================================================
@@ -163,7 +167,7 @@ About
 }
 
 .about-text p{
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-weight: 300;
     font-size: 1.15rem;
     line-height: 2;
@@ -172,86 +176,72 @@ About
 /* ================================================================================= 
 Categories
 */
-.products{
-    height: 400px;
-    padding: 0;
-}
+
 .category-grid{
-    height: 400px;
-    display:flex;
-    flex-wrap: wrap;
-  }
-  
-.category{
-    flex-grow:1;
-    background: #ccc;
-    height: 25vw;
-    border: 2px solid white;
-    
+    display: grid;
+    width: 100%;
+    height: 200vw;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+}
+
+div .category{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    border: 3px solid #ffffff;
 }
-  
-.mens:nth-of-type(1){
-    width: 50%;
-    flex-basis:50%;
-}
-  
-.trends:nth-of-type(2){
-    flex-basis:25%;
-}
-  
-.glasses:nth-of-type(3){
-    flex-basis:25%;
-}
-  
-.sale:nth-of-type(4){
-    flex-basis:25%;
-}
-  
-.bags:nth-of-type(5){
-    flex-basis:25%;
-}
-  
-.womens:nth-of-type(6){
-    flex-basis:50%;
+
+.category a{
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+
 }
 
 .mens{
-    background-image: url(../images/mens-category.jpg);
-    background-size: 100%;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.25) 0 ,rgba(0,0,0,0.25)), url(../images/mens-category.jpg);
+    background-size: cover;
+    background-size: cover;
     text-align: center;
+    grid-area: 1 / 1 / 2 / 3
 }
 
 .trends{
-    background: url(../images/trends-category.jpg);
-    background-size: 100%;
+    background: linear-gradient(180deg,rgba(0,0,0,0.25) 0 ,rgba(0,0,0,0.25)), url(../images/trends-category.jpg);
+    background-size: cover;
+    background-size: cover;
     text-align: center;
 }
 
 .glasses{
-    background: url(../images/glasses-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,0.25) 0 ,rgba(0,0,0,0.25)), url(../images/glasses-category.jpg);
     background-size: 100%;
+    background-size: cover;
     text-align: center;
 }
 
 .sale{
-    background: url(../images/sale-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,0.25) 0 ,rgba(0,0,0,0.25)), url(../images/sale-category.jpg);
     background-size: 100%;
+    background-size: cover;
     text-align: center;
 }
 
 .bags{
-    background: url(../images/bags-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,0.25) 0 ,rgba(0,0,0,0.25)), url(../images/bags-category.jpg);
     background-size: 100%;
+    background-size: cover;
     text-align: center;
 }
 
 .womens{
-    background: url(../images/womens-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,0.25) 0 ,rgba(0,0,0,0.25)), url(../images/womens-category.jpg);
     background-size: 100%;
+    background-size: cover;
     text-align: center;
+    grid-area: 4 / 1 / 5 / 3;
 }
 
 /* =================================================================================
@@ -365,7 +355,7 @@ Footer
 }
 
 .footer-inner{
-    font-family: "Playfair Display", serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 300;
     display: flex;
     justify-content: space-between;
@@ -452,4 +442,22 @@ html{
 .about-text h2{
     padding: 0;
     margin: 0;
+}
+
+.category-grid{
+    display: grid;
+    width: 100%;
+    height: 38vw;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+}
+
+.mens{
+}
+
+.womens{
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+
+
 }
