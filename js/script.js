@@ -1,7 +1,7 @@
 $(document).ready(function() { //<--- document ready lets page load before applying jQuery
 
 
-// Smooth Scrolling
+// Smooth Scrolling ========================================================
 
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -40,22 +40,16 @@ $('a[href*="#"]')
   });
 
 
-// carousel
+// Carousel =============================================================
 
 $('.main-carousel').flickity({
     // options
-    cellAlign: 'center',
+    cellAlign: 'left',
     contain: true
   });
 
+// subscribe email validation ===========================================
 
-
-
-
-
-
-
-// subscribe email validation.
 $(".email").on("submit", function(event) {
     event.preventDefault();
     if ($("#my-text-input").val() == "") {
