@@ -9,7 +9,6 @@ html{
 
 body{
     font-family: 'Raleway',sans-serif;
-    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 2;
@@ -38,13 +37,15 @@ h3 {
 
 p{
     font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 14px;
     text-align: center;
 }
 
 .container{
     max-width: 1240px;
     margin: 0 auto;
-    padding: 0 2%;
+    /* padding: 0 2%; */
 }
 
 .heavy{
@@ -59,7 +60,7 @@ Header
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1rem 1rem .5rem 1rem;
 }
 
 .logo{
@@ -249,40 +250,39 @@ Product Line
 */
 .most-loved{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 55px;
     line-height: 1;
 }
+
 .carousel {
     background: #EEE;
     padding-bottom: 0;
     margin-bottom: 50px;
-  }
+}
   
-  .carousel-cell {
+.carousel-cell {
     width: 100%;
-    /* height: 37rem; */
-    /* margin-right: 10px; */
-    /* border-radius: 5px; */
-    /* counter-increment: gallery-cell; */
-  }
+    margin-top: 0;
+    padding: 0;
+}
 
-  .carousel-cell img{
+.carousel-cell img{
       margin-top: 0;
       margin-bottom: 1rem;
-  }
+}
 
-  .carousel-cell h3{
+.carousel-cell h3{
       font-size: 1.5rem;
       margin-bottom: 1rem;
-  }
+}
 
   /* cell number */
-  .carousel-cell:before {
+.carousel-cell:before {
     display: block;
     text-align: center;
     content: counter(gallery-cell);
     line-height: 0;
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
     margin-bottom: 0;
     font-size: 80px;
     color: white;
@@ -300,47 +300,74 @@ Product Line
 }
 
 .price{
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 /* =================================================================================
 Subscribe
 */
 .subscribe{
+    font-family: 'Raleway';
     text-align: center;
     color: #FFFFFF;
-    height: 350px;
+    height: 330px;
     margin-top: 5rem;
+    margin-bottom: .5rem;
     padding-top: 50px;
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0 ,rgba(0,0,0,.25)), url(../images/wave-bkgd.jpg) no-repeat bottom;
 }
 
+.subscribe .container{
+    padding: 0 2%;
+    line-height: 1;
+}
 
+.subscribe p{
+    line-height: 2;
+    font-size: 1.15rem;
+}
+
+.subscribe h2{
+    line height: 1;
+}
 
 .sign-up{
     position: relative;
-    max-width: 300px;
+    max-width: 500px;
     margin: auto;
     padding-top: 40px;
+    line-height: 1;
     display: flex;
     justify-content: center;
 }
 
 .email{
-    height: 40px;
-    width: 300px;
+    height: 45px;
+    width: 500px;
     border-radius: 20px;
 }
 
+input::placeholder{
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
 .button{
+    font-size: 14px;
     position: absolute;
     right: 2px;
     bottom: 2px;
-    height: 35px;
-    width: 100px;
+    height: 40px;
+    width: 120px;
     color: #FFFFFF;
-    background-color: red;
+    background-color: #e2574c;
     border-radius: 20px;
+}
+
+.button:hover{
+    background-color: #b64036;
 }
 
 /* ===================================================================================
@@ -350,69 +377,86 @@ Footer
 .site-footer{
     background: #242424;
     color: #ffffff;
+    height: 300px;
     padding: 4rem 0;
+}
+
+.footer-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content{
+    justify-content: center;
 }
 
 .site-footer a{
     color: #ffffff;
 }
 
-.site-footer a:hover{
+.contact a:hover{
     color: coral;
 }
 
-.footer-inner{
+.copywrite p, .contact p, .address p{
     font-family: 'Playfair Display', serif;
     font-weight: 300;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border: 1px solid coral;
-}
-
-.footer-left{
-    text-align: left;
-    padding-left: 20px;
+    text-align: center;
+    font-size: 14px;
     line-height: 1.5;
-    justify-content: center;
+    width: 100%;
 }
 
-.copywrite p, .contact p, .address p{
-    text-align: left;
-    font-size: 16px;
+.contact p{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .address p{
     color: #969696;
-    text-align: left;
 }
 
 .media{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+ul .media{
+    width: 100%;
     font-size: 16px;
-    padding-right: 20px;
 }
 .media li{
+    margin: 0 5px;
     line-height: 2;
     list-style-type: none;
 }
 .media li a{
+    display: none;
     text-decoration: none;
     color: #FFFFFF;
 }
-
-
+/*  Peronally like these icons better */
 .fa-copyright,
 .fa-facebook,
 .fa-twitter-square,
 .fa-instagram,
 .fa-pinterest-square, 
 .fa-google-plus-square{
-    color: coral;
+    color: #ffffff;
     font-size: 20px;
 }
 
-/* Styles above here are "mobile first" */
+.fa-copyright:hover{color: coral;}
+.fa-facebook:hover{color: coral;}
+.fa-twitter-square:hover{color: coral;}
+.fa-instagram:hover{color: coral;}
+.fa-pinterest-square:hover{color: coral;} 
+.fa-google-plus-square:hover{color: coral;}
+
+/* Styles above here are "mobile first" =======================================*/
 @media screen and (min-width: 600px){
 
 html{
@@ -432,7 +476,7 @@ h2{
     order: 1;
  }
 
- .nav{
+.nav{
     order: 2;
     flex-basis: auto;
  }
@@ -445,17 +489,29 @@ h2{
     order: 3;
  }
 
+/* Banner ====================================
+*/
+.banner .container{
+    padding-top: 10rem;
+}
+.season{
+    font-size: 3rem;
+}
+
+/* About ======================================
+ */
 .about-text{
     max-width: 720px;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
 }
 
 .about-text h2{
     padding: 0;
-    margin: 0;
+    margin: 0 0 25px 0;
 }
-
+/* Categories ================================
+ */
 .category-grid{
     display: grid;
     width: 100%;
@@ -463,24 +519,110 @@ h2{
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
 }
 
-.mens{
-}
-
 .womens{
     grid-area: 2 / 3 / 3 / 5;
+}
+/* Carousel===================================
+ */
+ .most-loved{
+    text-align: center;
+    padding-top: 64px;
+    line-height: 1;
+}
+
+.carousel-cell img{
+    height: auto;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .carousel-cell {
     width: 50%;
-    /* height: 37rem; */
-  }
-
-
+    height: 76vw;
+    padding: 0 2rem;
 }
 
+.price{
+    margin-bottom: 30px;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Subscribe ===================================
+ */
+ .subscribe{
+    height: 345px;
+
+}
+/* Footer ====================================
+ */
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.copywrite p, .contact p, .address p{
+    text-align: left;
+    font-size: 16px;
+}
+
+.address p{
+    color: #969696;
+    text-align: left;
+}
+
+ul.media{
+    margin-top: 0;
+}
+
+.media{
+    flex-direction: column;
+    font-size: 16px;
+    height: 100%;
+}
+
+.media li{
+    line-height: 2;
+    list-style-type: none;
+}
+
+.media li a{
+    display: inline-block;
+    font-weight: 200;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.media a:hover{
+    color: coral;
+}
+
+.fa-copyright,
+.fa-facebook,
+.fa-twitter-square,
+.fa-instagram,
+.fa-pinterest-square, 
+.fa-google-plus-square{
+    font-size: 20px;
+}
+
+/*.fa-copyright:hover{ color: coral;}
+.fa-facebook:hover{ color: coral;}
+.fa-twitter-square:hover{ color: coral;}
+.fa-instagram:hover{ color: coral;}
+.fa-pinterest-square:hover{ color: coral;}
+.fa-google-plus-square:hover{ color: coral;}*/
+
+
+
+/* Desktop =======================================================================*/
 @media screen and (min-width: 1240px){
-    .carousel-cell {
+.carousel-cell {
         width: 25%;
-        /* height: 37rem; */
-      }
+}
 }
