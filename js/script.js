@@ -50,13 +50,15 @@ $('.main-carousel').flickity({
 
 // subscribe email validation ===========================================
 
-$(".email").on("submit", function(event) {
-    event.preventDefault();
-    if ($("#my-text-input").val() == "") {
-    alert("You missed the field.");
+$(".button").on("click", function() {
+    // Code to run when button clicked...
+    var emailInput = $(".email").val();
+
+    if ($(".email").val() === "") {
+      alert("Please Check Email Address");
     } else {
-    alert("Thanks for filling the field!");
-}
+      alert("Thank you for subscribing: " + emailInput );
+    }
 });
 
 

@@ -336,7 +336,7 @@ Subscribe
 }
 
 .subscribe h2{
-    line height: 1;
+    line-height: 1;
 }
 
 .sign-up{
@@ -539,17 +539,16 @@ h2{
     line-height: 1;
 }
 
+.carousel-cell {
+    width: 50%;
+    padding: 0 2rem;
+}
+
 .carousel-cell img{
     height: auto;
     max-width: 100%;
     margin-top: 0;
     margin-bottom: 1rem;
-}
-
-.carousel-cell {
-    width: 50%;
-    height: 76vw;
-    padding: 0 2rem;
 }
 
 .price{
@@ -563,7 +562,6 @@ h2{
  */
  .subscribe{
     height: 345px;
-
 }
 /* Footer ====================================
  */
@@ -619,19 +617,10 @@ ul.media{
 .fa-google-plus-square{
     font-size: 20px;
 }
-
-/*.fa-copyright:hover{ color: coral;}
-.fa-facebook:hover{ color: coral;}
-.fa-twitter-square:hover{ color: coral;}
-.fa-instagram:hover{ color: coral;}
-.fa-pinterest-square:hover{ color: coral;}
-.fa-google-plus-square:hover{ color: coral;}*/
-
-
-
+}
 /* Desktop =======================================================================*/
 @media screen and (min-width: 1240px){
-.carousel-cell {
-        width: 25%;
+    .carousel-cell {
+    width: 25%;
 }
 }
