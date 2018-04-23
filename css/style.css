@@ -1,4 +1,3 @@
-
 /* ===========================================================================================
  */
 html{
@@ -524,7 +523,7 @@ h2{
 .category-grid{
     display: grid;
     width: 100%;
-    height: 45vw;
+    height: 50vw;
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
 }
 
