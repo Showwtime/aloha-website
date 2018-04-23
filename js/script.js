@@ -2,7 +2,7 @@ $(document).ready(function() { //<--- document ready lets page load before apply
 
 
 // Smooth Scrolling ========================================================
-
+// Source - https://css-tricks.com/snippets/jquery/smooth-scrolling/#article-header-id-1
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -41,6 +41,7 @@ $('a[href*="#"]')
 
 
 // Carousel =============================================================
+// Source https://flickity.metafizzy.co/
 
 $('.main-carousel').flickity({
     // options
